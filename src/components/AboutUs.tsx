@@ -33,7 +33,7 @@ export const AboutUS = () => {
       className="flex h-screen w-full justify-center bg-white selection:bg-zinc-800 selection:text-white"
     >
       <div className="mt-[20vh] grid h-[50vh] w-[60.5rem] grid-cols-3">
-        <h2 className="font-brand text-[20px] text-black">About Us</h2>
+        <h2 className="font-brand pt-3 text-[17px] text-black">About Us</h2>
         <div className="col-span-2 ml-11.5 flex w-150 flex-col gap-8">
           <motion.h3
             ref={ref}
@@ -69,7 +69,7 @@ export const AboutUS = () => {
               transition={{
                 duration: 0.5,
               }}
-              className="text-[15px] leading-5 text-neutral-500"
+              className="text-[15px] leading-5 text-neutral-600"
             >
               The place we live shapes how we feel, think, and experience
               everyday life. A well-designed living environment offers comfort,
