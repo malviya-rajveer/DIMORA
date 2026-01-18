@@ -9,11 +9,6 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 const brandMono = Playfair_Display({
   variable: "--font-brand-mono",
   subsets: ["latin"],

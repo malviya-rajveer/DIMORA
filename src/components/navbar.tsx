@@ -27,14 +27,7 @@ export const Navbar = () => {
     sections.forEach((section) => observer.observe(section));
     return () => observer.disconnect();
   }, []);
-  const Text = {
-    initial: {
-      y: 0,
-    },
-    hover: {
-      y: -24,
-    },
-  };
+
   return (
     <motion.div
       className="fixed top-0 z-40 h-10 w-full selection:bg-zinc-800 selection:text-white"

@@ -32,7 +32,7 @@ const SectionHeroText = [
 export const Our_Process = () => {
   const [hover, setHover] = useState<boolean>(false);
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { amount: 0.3 });
+  const isInView = useInView(ref, { amount: 0.3, once: true });
   const Button_Variant_Path_1 = {
     initial: {
       opacity: 1,

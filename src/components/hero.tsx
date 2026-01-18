@@ -7,10 +7,6 @@ import { useEffect } from "react";
 export const HeroSection = () => {
   const [scope, animate] = useAnimate();
 
-  useEffect(() => {
-    startAnimate();
-  }, []);
-
   const startAnimate = () => {
     animate(
       "span",
@@ -37,6 +33,10 @@ export const HeroSection = () => {
       },
     );
   };
+
+  useEffect(() => {
+    startAnimate();
+  }, []);
 
   return (
     <section

@@ -7,9 +7,9 @@ export const Limit_less = () => {
   const ref = useRef<HTMLDivElement>(null);
   const ref2 = useRef<HTMLDivElement>(null);
 
-  const isInView = useInView(ref, { amount: 0.7 });
+  const isInView = useInView(ref, { amount: 0.7, once: true });
 
-  const isInView2 = useInView(ref2, { amount: 0.5 });
+  const isInView2 = useInView(ref2, { amount: 0.5, once: true });
   return (
     <section
       data-theme="dark"
