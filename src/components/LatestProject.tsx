@@ -88,7 +88,7 @@ export const Latest_Product = () => {
             transition={{
               duration: 0.3,
             }}
-            className=""
+            className="h-140 w-full"
             src={"image_5.jpg"}
           ></motion.img>
           <div className="mt-2 flex justify-between">
