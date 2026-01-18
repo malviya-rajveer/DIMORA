@@ -13,12 +13,12 @@ export const Latest_Product = () => {
       data-theme="dark"
       className="flex h-full w-full flex-col bg-stone-800/20 selection:bg-zinc-800 selection:text-white"
     >
-      <h2 className="mx-auto mt-[17vh] text-7xl">
+      <h2 className="mx-auto mt-[17vh] text-4xl text-white md:text-6xl xl:text-7xl">
         <span className="font-brand">ELEGANT &</span>
         <span className="font-sans"> MODERN</span>
       </h2>
       {/* <p>Our latest Completed Projects</p> */}
-      <div className="mx-auto mt-[12vh] grid h-full w-[95vw] grid-cols-2 gap-10 pb-[10vh] font-sans">
+      <div className="grod-cols-1 mx-auto mt-[12vh] grid h-full w-[95vw] gap-10 pb-[10vh] font-sans md:grid-cols-2">
         <div ref={ref} className="">
           <motion.img
             initial={{ opacity: 0, scale: 1.03 }}
@@ -27,7 +27,7 @@ export const Latest_Product = () => {
               duration: 0.3,
             }}
             src={"/image_3.jpg"}
-            className="size-200"
+            className="lg:size-200"
           ></motion.img>
           <div className="mt-2 flex justify-between">
             <text className="text-md inline-block">NEW YORK</text>
@@ -68,7 +68,7 @@ export const Latest_Product = () => {
               duration: 0.3,
             }}
             src={"/image_4.jpg"}
-            className="size-200"
+            className="size-150 lg:size-200"
           ></motion.img>
           <div className="mt-2 flex justify-between">
             <text className="text-md inline-block">TORONTO</text>

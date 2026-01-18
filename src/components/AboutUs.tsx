@@ -1,6 +1,6 @@
 "use client";
 import { cn } from "@/lib/utils";
-import { motion, stagger, useInView } from "motion/react";
+import { motion, useInView } from "motion/react";
 import { useRef } from "react";
 
 const Text = [
@@ -26,32 +26,40 @@ const Text = [
 
 export const AboutUS = () => {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: false, amount: 1 });
+
+  const isInView = useInView(ref, { once: true, amount: 0.4 });
   return (
     <section
       data-theme="light"
       className="flex h-screen w-full justify-center bg-white selection:bg-zinc-800 selection:text-white"
     >
-      <div className="mt-[20vh] grid h-[50vh] w-[60.5rem] grid-cols-3">
-        <h2 className="font-brand pt-3 text-[17px] text-black">About Us</h2>
-        <div className="col-span-2 ml-11.5 flex w-150 flex-col gap-8">
+      <div
+        className={cn(
+          "mt-[20vh] grid h-[50vh] grid-cols-3 md:grid-cols-3",
+          "w-100 md:w-160 lg:w-180 xl:w-[60.5rem]",
+        )}
+      >
+        <h2 className="font-brand col-span-1 pt-2 pl-5 text-xs text-black md:pt-1 md:pl-0 md:text-[17px] lg:pt-3">
+          About Us
+        </h2>
+        <div className="flex w-150 flex-col gap-8 md:col-span-2 md:ml-11.5">
           <motion.h3
             ref={ref}
             className={cn(
-              "font-brand overflow-hidden leading-12 text-black selection:bg-stone-800/10 selection:text-white",
-              "xl:text-4xl",
+              "font-brand overflow-hidden leading-9 text-black selection:bg-stone-800/10 selection:text-white lg:leading-12",
+              "text-lg md:text-2xl lg:text-3xl xl:text-4xl",
             )}
           >
             {Text.map((data, idx) => {
               return (
-                <motion.div className="overflow-hidden" key={idx}>
+                <motion.div className="overflow-hidden py-1" key={idx}>
                   <motion.div
                     initial={{
                       y: 40,
                     }}
                     animate={isInView ? { y: 0 } : {}}
                     transition={{
-                      duration: 0.3,
+                      duration: 0.35,
                     }}
                   >
                     {data.text}
@@ -69,7 +77,7 @@ export const AboutUS = () => {
               transition={{
                 duration: 0.5,
               }}
-              className="text-[15px] leading-5 text-neutral-600"
+              className="*: w-70 text-xs leading-5 text-neutral-600 md:w-90 md:text-[15px] lg:w-120 xl:w-full"
             >
               The place we live shapes how we feel, think, and experience
               everyday life. A well-designed living environment offers comfort,

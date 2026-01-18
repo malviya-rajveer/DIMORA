@@ -45,7 +45,7 @@ export const Navbar = () => {
         duration: 0.3,
       }}
     >
-      <div className="mx-auto flex h-full w-100 items-center justify-between md:w-[60.5rem]">
+      <div className="mx-auto flex h-full w-100 items-center justify-between md:w-160 lg:w-180 xl:w-[60.5rem]">
         <motion.div className={"text-xl font-medium"}>DIMORA</motion.div>
         <div className="flex gap-2 md:gap-9">
           <Roll_button text="ABOUT US"></Roll_button>
