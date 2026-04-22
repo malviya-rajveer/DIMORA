@@ -1,5 +1,6 @@
 "use client";
 import { motion, useInView } from "motion/react";
+import Image from "next/image";
 import { useRef, useState } from "react";
 
 const SectionHeroText = [
@@ -70,7 +71,7 @@ export const Our_Process = () => {
             className="relative flex w-40 items-center justify-center bg-red-300 md:w-60 lg:w-80"
           >
             <div className="h-60 w-40 overflow-hidden md:h-80 md:w-60 lg:h-110 lg:w-80">
-              <motion.img
+              <motion.div
                 initial={{
                   scale: 1.09,
                 }}
@@ -84,20 +85,32 @@ export const Our_Process = () => {
                 transition={{
                   duration: 0.3,
                 }}
-                src={"/image_3.jpg"}
-                className="object-cover"
-              ></motion.img>
+              >
+                <Image
+                  alt=""
+                  height={1000}
+                  width={1000}
+                  src={"/image_3.jpg"}
+                  className="object-cover"
+                ></Image>
+              </motion.div>
             </div>
-
-            <motion.img
+            <motion.div
               initial={{ opacity: 0, filter: "blur(0px)" }}
               animate={hover ? { opacity: 1, filter: "blur(0px)" } : {}}
               transition={{
                 duration: 0.3,
               }}
-              src={"/image_4.jpg"}
-              className="absolute h-50 object-cover lg:h-79"
-            ></motion.img>
+              className="absolute"
+            >
+              <Image
+                alt=""
+                height={200}
+                width={200}
+                src={"/image_4.jpg"}
+                className="h-50 object-cover lg:h-79"
+              ></Image>
+            </motion.div>
           </motion.div>
           <div className="flex flex-col gap-1 pt-4 text-xs md:text-[14px] lg:text-[17px]">
             <text className="font-sans text-black">(01) Sketch Design</text>

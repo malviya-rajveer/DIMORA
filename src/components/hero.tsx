@@ -43,12 +43,13 @@ export const HeroSection = () => {
       data-theme="dark"
       className="relative z-0 flex h-dvh w-full justify-center overflow-hidden selection:bg-zinc-800 selection:text-white"
     >
-      <div
-        className={cn(
-          "absolute inset-0 -z-20 flex scale-250 items-center justify-center bg-[url('/hero-Image.png')] bg-contain bg-center bg-no-repeat",
-          "md:scale-x-150 md:scale-y-130 xl:scale-x-150 xl:scale-y-130",
-        )}
-      ></div>
+      <img
+        src="/hero-Image.png"
+        alt=""
+        height={0}
+        width={0}
+        className="absolute h-full w-full object-cover"
+      />
       <div ref={scope} className="relative flex flex-col items-center">
         <h1
           className={cn(

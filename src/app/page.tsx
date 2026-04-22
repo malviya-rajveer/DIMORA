@@ -6,6 +6,7 @@ import { Limit_less } from "@/components/limitless";
 import { Footer } from "@/components/Footer";
 
 export default function Home() {
+  // "use cache";
   return (
     <section className="h-full w-full overflow-hidden">
       <HeroSection />
