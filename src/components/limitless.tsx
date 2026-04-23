@@ -15,13 +15,15 @@ export const Limit_less = () => {
       data-theme="dark"
       className="relative z-0 h-full w-full overflow-hidden bg-stone-800/20 selection:bg-zinc-800 selection:text-white"
     >
-      <Image
-        src={"/dia-dark-background.png"}
-        alt=""
-        height={3000}
-        width={3000}
-        className="maskt-to-10% pointer-events-none absolute right-0 bottom-0 -z-10 mask-t-from-0% mask-l-from-90% mask-l-to-100%"
-      ></Image>
+      <div className="maskt-to-10% absolute right-0 bottom-0 -z-10 mask-t-from-0% mask-l-from-90% mask-l-to-100%">
+        <Image
+          src={"/dia-dark-background.png"}
+          alt=""
+          height={3000}
+          width={3000}
+          className="pointer-events-none"
+        ></Image>
+      </div>
 
       <motion.div
         ref={ref}
@@ -32,13 +34,15 @@ export const Limit_less = () => {
         }}
         animate={isInView ? { opacity: 1, y: 0 } : {}}
       >
-        <motion.img
-          src={"/lightwall.png"}
-          alt=""
-          className="h-60 w-250 object-cover object-left"
-          width={600}
-          height={600}
-        ></motion.img>
+        <div>
+          <Image
+            src={"/lightwall.png"}
+            alt=""
+            className="h-60 w-250 object-cover object-left brightness-95 contrast-120"
+            width={600}
+            height={600}
+          ></Image>
+        </div>
         <div
           className={cn(
             "relative pt-10 font-sans text-4xl font-medium text-white md:left-10",
@@ -67,13 +71,15 @@ export const Limit_less = () => {
         >
           WE TAKE RISK'S
         </div>
-        <motion.img
-          src={"/_ (2).jpeg"}
-          alt=""
-          className="h-60 w-155 object-cover object-left"
-          width={600}
-          height={600}
-        ></motion.img>
+        <div>
+          <Image
+            src={"/_ (2).jpeg"}
+            alt=""
+            className="h-60 w-155 object-cover object-left"
+            width={600}
+            height={600}
+          ></Image>
+        </div>
       </motion.div>
     </section>
   );
