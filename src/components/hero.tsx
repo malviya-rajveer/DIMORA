@@ -2,6 +2,7 @@
 import { cn } from "@/lib/utils";
 import { IconArrowNarrowRightDashed } from "@tabler/icons-react";
 import { motion, stagger, useAnimate } from "motion/react";
+import Image from "next/image";
 import { useEffect } from "react";
 
 export const HeroSection = () => {
@@ -44,7 +45,7 @@ export const HeroSection = () => {
       className="relative z-0 flex h-dvh w-full justify-center overflow-hidden selection:bg-zinc-800 selection:text-white"
     >
       <div className="absolute h-full w-full">
-        <img
+        <Image
           src="/hero-Image.png"
           alt=""
           height={0}

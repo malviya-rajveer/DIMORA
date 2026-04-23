@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { Roll_button } from "./ui/roll-button";
 
 export const Footer = () => {
@@ -10,7 +11,7 @@ export const Footer = () => {
       <div className="mt-[19vh] grid w-100 grid-cols-5 md:w-160 lg:w-180 xl:w-240">
         <div className="col-span-3 md:col-span-2">
           <div className="">
-            <img src="image_4.jpg" alt="" className="h-[68vh]" />
+            <Image src="image_4.jpg" alt="" className="h-[68vh]" />
             <div className="font-brand text-[12vh] text-black">DIMORA</div>
           </div>
         </div>
