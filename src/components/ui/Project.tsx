@@ -33,7 +33,7 @@ export const Project = ({ img, place, className }: Project) => {
         className={cn(className)}
       ></Image>
       <div className="mt-2 flex justify-between">
-        <text className="text-md inline-block">{place}</text>
+        <div className="text-md inline-block">{place}</div>
         <a className="group flex gap-1">
           <Roll_button text="CHECK OUT" />
           <IconArrowNarrowRightDashed

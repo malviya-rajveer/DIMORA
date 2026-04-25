@@ -11,7 +11,13 @@ export const Footer = () => {
       <div className="mt-[19vh] grid w-100 grid-cols-5 md:w-160 lg:w-180 xl:w-240">
         <div className="col-span-3 md:col-span-2">
           <div className="">
-            <Image src="image_4.jpg" alt="" className="h-[68vh]" />
+            <Image
+              src="/image_4.jpg"
+              width={10000}
+              height={10000}
+              alt=""
+              className="h-[68vh] w-75"
+            />
             <div className="font-brand text-[12vh] text-black">DIMORA</div>
           </div>
         </div>

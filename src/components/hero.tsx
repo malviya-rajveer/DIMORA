@@ -48,8 +48,8 @@ export const HeroSection = () => {
         <Image
           src="/hero-Image.png"
           alt=""
-          height={0}
-          width={0}
+          height={10000}
+          width={10000}
           className="absolute h-full w-full object-cover"
         />
       </div>

@@ -113,20 +113,18 @@ export const Our_Process = () => {
             </motion.div>
           </motion.div>
           <div className="flex flex-col gap-1 pt-4 text-xs md:text-[14px] lg:text-[17px]">
-            <text className="font-sans text-black">(01) Sketch Design</text>
-            <text className="font-sans text-black">
-              (02) Design Development
-            </text>
-            <text className="font-sans text-black">
+            <div className="font-sans text-black">(01) Sketch Design</div>
+            <div className="font-sans text-black">(02) Design Development</div>
+            <div className="font-sans text-black">
               (03) Development Application
-            </text>
-            <text className="font-sans text-black">(04) Interior Design</text>
-            <text className="font-sans text-black">
+            </div>
+            <div className="font-sans text-black">(04) Interior Design</div>
+            <div className="font-sans text-black">
               (05) Building approval plans + documentation
-            </text>
-            <text className="font-sans text-black">
+            </div>
+            <div className="font-sans text-black">
               (06) Construction plans + documentation
-            </text>
+            </div>
           </div>
         </div>
         <div ref={ref} className="w-7xl">
