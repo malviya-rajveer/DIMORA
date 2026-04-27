@@ -10,7 +10,6 @@ export const ReactLenisProvider = ({ children }: Prop) => {
       root={true}
       options={{
         duration: 1,
-
         smoothWheel: true,
       }}
     >

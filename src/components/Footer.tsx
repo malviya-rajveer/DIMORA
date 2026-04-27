@@ -16,9 +16,11 @@ export const Footer = () => {
               width={10000}
               height={10000}
               alt=""
-              className="h-[68vh] w-75"
+              className="h-[68vh] object-cover md:max-w-58 xl:max-w-71"
             />
-            <div className="font-brand text-[12vh] text-black">DIMORA</div>
+            <div className="font-brand text-6xl text-black xl:text-7xl">
+              DIMORA
+            </div>
           </div>
         </div>
         <div className="col-span-2 hidden w-70 md:block">

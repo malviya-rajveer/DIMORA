@@ -40,7 +40,7 @@ export const Roll_button = ({
         transition={{
           duration: 0.2,
         }}
-        className="relative bottom-1"
+        className="relative bottom-[2px]"
       >
         {text}
       </motion.span>
