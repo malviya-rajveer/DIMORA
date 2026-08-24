@@ -21,7 +21,13 @@ export const Navbar = () => {
           }
         });
       },
-      { threshold: 0.1 },
+      {
+        root: null,
+        // A thin band starting right below the navbar. Percentages are
+        // relative to the viewport, so this stays correct on resize.
+        rootMargin: `-10px 0px -100% 0px`,
+        threshold: 0,
+      },
     );
 
     sections.forEach((section) => observer.observe(section));
